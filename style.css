@@ -6,25 +6,24 @@
     width: 1140px;
     margin: 0 auto;
     display: flex;
-    
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
 }
 .header {
-    Height: 75px;
     background: #222222;
-    display: flex;
+}
+.header_menu{
     align-items: center;
-    
-}
-.head_top_cont{
     justify-content: space-between;
+    Height: 75px;
 }
+
 .logo{
     display: flex;
     align-items: center;
 }
 .search {
     margin-left: 41px;
-
 }
 
 .batton_copy {
@@ -50,7 +49,7 @@
 }
 
 .title_head_content {
-    font-family: 'Lato', sans-serif;
+    
     color: #222222;
    border-left: 12px solid #F16D7F;
     align-self: center ;
@@ -114,4 +113,187 @@
     font-size: 24px;
     line-height: 28px;
     text-align: center;
+}
+.conteiner_products {
+    flex-direction: column;
+    margin-top: 66px;
+    align-items: center;
+    margin-bottom: 95px;
+}
+.products_title {
+   align-self: center;
+   text-align: center;
+}
+.prod_title_h3 {
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+}
+.prod_title_p {
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+}
+.products_item {
+    margin-top: 47px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.prod_item1 {
+    width: 360px;
+    background: #F8F8F8;
+    margin-bottom: 30px;
+}
+.prod_item1_link {
+    text-decoration: none;
+}
+.prod_item1_title {
+    margin-top: 25px;
+    width: 300px;
+    padding-left: 18px;
+}
+.prod_item_h3 {
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+}
+.prod_item_p {
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+    margin-top: 12px;
+}
+.prod_item_h4 {
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+    margin-top: 18px;
+    margin-bottom: 20px;
+}
+.but_prod {
+    border: 1px solid #FF6A6A;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+    padding: 14px 38px;
+    background: none;
+    margin-top: 18px;
+}
+.footer_try {
+    background: #222224;
+}
+.footer_top {
+    height: 341px;
+    align-items: center;
+}
+.footer_top_item {
+    font-weight: 300;
+    color: #FBFBFB;
+    text-align: center;
+}
+.footer_top_h2 {
+    font-size: 19.96px;
+    line-height: 24px;
+    margin-top: 28px;
+    margin-bottom: 16px;
+}
+.footer_top_p {
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    text-align: center;
+}
+.footer_centr_try{
+    background-image: url(img/footer_centr.png);
+    height: 448px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+} 
+.footer_centr {
+    justify-content: space-between; 
+    height: 100%;
+    align-items: center;
+}
+
+.footer_coment {
+    text-align: center;
+}
+
+.footer_p {
+    font-size: 20px;
+    line-height: 24px;
+    color: #222224;
+    width: 400px;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+.footer_email {
+    margin-right: 100px;
+}
+.email_h2{
+    font-size: 24px;
+    line-height: 167.2%;
+    text-align: center;
+    color: #222224;
+}
+.email_h3 {
+    line-height: 167.2%;
+    text-align: center;
+    color: #222224;
+    font-weight: bold;
+}
+
+.email {
+    display: inline-block;
+    margin-top: 32px;
+    clear: both;
+}
+.input_email {
+    background: #E1E1E1;
+    border: 0 solid;
+    box-sizing: border-box;
+    border-radius: 25px  0 0 25px;
+    height: 49px;
+    width: 256px;
+    font-style: normal;
+    letter-spacing: 0.04em;
+    padding-left: 22px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    align-items: center;
+    color: #222224;
+    opacity: 0.67;
+    outline: none;
+}
+.but_email {
+    background: #F16D7F;
+    border: 0 solid;
+    border-radius: 0 25px 25px 0;
+    height: 49px;
+    width: 100px;
+    font-size: 14px;
+    line-height: 17px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+.footer_down_try {
+    background: #222224;
+    height: 80px;
+}
+.footer_down {
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+.text_footer_down {
+    font-size: 16px;
+    line-height: 19px;
+    color: #FBFBFB;
+}
+.link_f, .link_i, .link_p, .link_t {
+    padding-left: 7px;
 }
