@@ -11,6 +11,7 @@
 }
 .header {
     background: #222222;
+    position: relative;
 }
 .header_menu{
     align-items: center;
@@ -29,10 +30,12 @@
 .batton_copy {
     display: flex;
     align-items: center;
+    
 }
 
 .menu {
     margin-right: 33px;
+   
 }
 .account{
     margin-right: 33px;
@@ -41,6 +44,75 @@
     height: 764px;
     background: #F1E4E6;
 }
+.menu_hover {
+    width: 232px;
+    height: 727px;
+    background: #FFFFFF;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    position: absolute;
+    top: 75px;
+    transition: right 2s;
+    padding-top: 37px;
+    padding-left: 34px;
+    display: none;
+}
+.menu_hover_h3 {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin-bottom: 24px;
+    padding-left: 2px;
+}
+.menu_hover_title {
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+.img_menu {
+    cursor: pointer;
+}
+.img_cloes {
+    position: absolute;
+    right: 0;
+    margin-top: -20px;
+    margin-right: 17px;
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+}
+.menu_hover_li {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+}
+ul {
+    list-style-type: none;
+}
+li {
+    margin: 11px auto 11px 21px;
+}
+
+#input_cloes {
+   display: none;
+   
+}
+
+#input_cloes:checked ~ .menu_hover {
+    right: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
 .head_center {
     justify-content: space-around;
 }
@@ -294,6 +366,49 @@
     line-height: 19px;
     color: #FBFBFB;
 }
-.link_f, .link_i, .link_p, .link_t {
-    padding-left: 7px;
+
+.link_blok1 {
+    width: 31px;
+    height: 32px;
+    padding: 8px 12px;
+    background: #FFFFFF;
+}
+.link_blok2 {
+    width: 31px;
+    height: 32px;
+    padding: 8px 8px;
+    background: #FFFFFF;
+}
+.link_blok3 {
+    width: 31px;
+    height: 32px;
+    padding: 8px 10px;
+    background: #FFFFFF;
+}
+.link_blok4 {
+    width: 31px;
+    height: 32px;
+    padding: 8px 8px;
+    background: #FFFFFF;
+}
+.but_prod:hover {
+    background-color:  #F16D7F;
+    border: 1px solid #FF6A6A;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    padding: 14px 38px;
+    margin-top: 18px;
+}
+.img_prod_hover {
+    position: absolute;
+    z-index: 2;
+}
+.img_prod_item {
+    position: relative;
+    z-index: 3;
+}
+
+.img_prod_item:hover {
+    z-index: 1;
 }
