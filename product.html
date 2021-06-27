@@ -66,55 +66,44 @@
             <h3 class="head_reg_h3">REGISTRATION</h3>
         </div>
     </div>
-    <div class="conteiner">
-        <div class="reg_cont">
-            <forma class="reg_form" action="#">
-                <p class="reg_name_txt">Your Name</p>
-                <input class="in_fi_name" type="text" placeholder="First Name" required>
-                <input class="in_la_name" type="text" placeholder="Last Name" required>
-                <div class="lab">
-                    <label class="lab_reg" for="male">
-                        <input class="custom-checkbox" id="male" type="radio" name="chec" checked>
-                        <p class="reg_txt">Male</p>
-                    </label>
-                    <label class="lab_reg" for="female">
-                        <input class="custom-checkbox" id="female" type="radio" name="chec">
-                        <p class="reg_txt">Female</p>
-                    </label>
-                    <label class="lab_reg" for="other">
-                        <input class="custom-checkbox" id="other" type="radio" name="chec">
-                        <p class="reg_txt">Other</p>
-                    </label>
+    <div class="carousel_prod">
+        <span id="prod-item-1"></span>
+        <span id="prod-item-2"></span>
+        <span id="prod-item-3"></span>
+        <div class="carousel-item item-1">
+            <img src="img/prod_item_1.png" alt="модные штанишки">
+            <div class="item-1_cart">
+                <div class="item-1_cart_info">
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
                 </div>
-                <p class="reg_name_txt">Login details</p>
-                <input class="in_email_name" type="email" placeholder="Email" required>
-                <input class="in_pass_name" type="password" placeholder="Password" required>
-                <p class="reg_pass_txt">Please use 8 or more characters, with at least 1 number and a mixture of
-                    uppercase
-                    and lowercase letters
-                </p>
-                <div class="but_reg">
-                    <button id="send" type="submit">JOIN NOW
-                        <img class="send_img" src="img/join_now.svg" alt="join">
-                    </button>
-                </div>
-            </forma>
-            <div class="reg_sale">
-                <h4 class="reg_sale_txt">LOYALTY HAS ITS PERKS</h4>
-                <p class="reg_sale_txt">Get in on the loyalty program where you can earn points and unlock serious
-                    perks.
-                    Starting with these as
-                    soon as you join:</p>
-                <ul class="reg_sale_txt">
-                    <li class="reg_li">15% off welcome offer</li>
-                    <li class="reg_li">Free shipping, returns and exchanges on all orders</li>
-                    <li class="reg_li">$10 off a purchase on your birthday</li>
-                    <li class="reg_li">Early access to products</li>
-                    <li class="reg_li">Exclusive offers & rewards</li>
-                </ul>
+                <form class="cart_selection" action="#">
+                    <select class="sec_color" id="color">
+                        <option value="none">CHOOSE COLOR</option>
+                        <option value="red">Красный</option>
+                        <option value="blue">Синий</option>
+                        <option value="yellow">Жёлтый</option>
+                    </select>
+                    <select class="sec_size" id="size">
+                        <option value="none">CHOOSE SIZE </option>
+                        <option value="43">43</option>
+                        <option value="45">45</option>
+                        <option value="56">56</option>
+                    </select>
+                    <select class="sec_quan" id="quantity">
+                        <option value="none">QUANTITY</option>
+                        <option value="red">1</option>
+                        <option value="blue">2</option>
+                        <option value="yellow">3</option>
+                    </select>
+                    <button></button>
+                </form>
             </div>
         </div>
     </div>
+
     <footer>
 
         <div class="footer_centr_try">
