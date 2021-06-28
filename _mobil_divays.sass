@@ -35,9 +35,6 @@
         &_30
             width: 32%
 
-    .products_item
-        justify-content: space-evenly
-
     .menu_hover
         z-index: 5
         height: auto
@@ -74,6 +71,23 @@
 
     .footer_link
         padding-right: 32px
+
+    /*страница продукта*/
+
+    .head_reg_h3
+        padding-left: 16px
+
+    .crumb
+        padding-right: 16px
+
+    .border_red
+        margin-left: 160px
+
+    .but_add_prod
+        margin-left: 100px
+
+    .prod_none
+        display: none
 
 @media(max-width: 667px)
     .conteiner
@@ -130,3 +144,48 @@
     .head_reg_h3
         text-align: center
         width: 100%
+
+    /*страница продукта*/    
+
+    .head_prod
+        flex-direction: column
+
+        .head_reg_h3
+            margin-top: 24px
+            margin-bottom: 0
+            padding-left: 0
+
+        .crumb
+            margin-top: 0
+            padding: 0
+
+            &_sub
+                margin-top: 32px
+                margin-bottom: 46px
+                justify-content: center
+
+            li
+                margin: 0
+
+    .carousel-item_img
+        width: 375px
+
+    .item-1_cart
+        position: unset
+
+        .ar_svg1, .ar_svg2
+            top: 150px
+
+    .border_red
+        margin-left: 60px
+
+    .pr_prod
+        margin-top: 64px
+        margin-bottom: 64px
+
+    .sec_color, .sec_size, .sec_quan
+        font-size: 10px
+        line-height: 12px
+
+    .but_add_prod
+        margin-left: 40px
