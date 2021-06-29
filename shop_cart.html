@@ -70,7 +70,7 @@
         <div class="shop_cart_content">
             <div class="shop_cart_list">
                 <div class="shop_cart_list_item1">
-                    <img src="img/cart_shop_item1.png" alt="полосатая толстовка">
+                    <img class="shop_cart_list_item1_img" src="img/cart_shop_item1.png" alt="полосатая толстовка">
                     <div class="shop_cart_list_item1_txt">
                         <p class="shop_cart_item_p1">MANGO PEOPLE <br> T-SHIRT</p>
                         <p class="shop_cart_item_p2">Price: <span class="cart_p_span1">$300</span></p>
@@ -84,7 +84,7 @@
                     <input id="cart_cloes" type="checkbox">
                 </div>
                 <div class="shop_cart_list_item1">
-                    <img src="img/cart_shop_item2.png" alt="белые кеды">
+                    <img class="shop_cart_list_item1_img" src="img/cart_shop_item2.png" alt="белые кеды">
                     <div class="shop_cart_list_item1_txt">
                         <p class="shop_cart_item_p1">MANGO PEOPLE <br> T-SHIRT</p>
                         <p class="shop_cart_item_p2">Price: <span class="cart_p_span1">$300</span></p>
@@ -102,12 +102,22 @@
                     <a class="cart_battons_cont" href="#">CONTINUE SHOPPING</a>
                 </div>
             </div>
-            <form action="" class="shop_cart_addres">
-                <div class="shop_cart_addre_box1">
-
+            <form action="#" class="shop_cart_addres">
+                <div class="shop_cart_addres_box1">
+                    <p class="shop_cart_addres_box1_p1">SHIPPING ADRESS</p>
+                    <input class="inp1_adres" type="text" placeholder="Bangladesh">
+                    <input class="inp1_adres" type="text" placeholder="State">
+                    <input class="inp1_adres" type="text" placeholder="Postcode / Zip">
+                    <button class="but_get" type="submit">GET A QUOTE</button>
                 </div>
-                <div class="shop_cart_addre_box2">
-
+                <div class="shop_cart_addres_box2">
+                    <div class="shop_cart_addres_box2_sub">
+                        <p class="shop_cart_addres_box2_sub_p1">SUB TOTAL<span class="shop_cart_box2_span">$900</span>
+                        </p>
+                        <p class="shop_cart_addres_box2_sub_p2">GRAND TOTAL<span
+                                class="shop_cart_box2_span2">$900</span></p>
+                    </div>
+                    <input class="inp_proceed" type="submit" value="PROCEED TO CHECKOUT">
                 </div>
             </form>
         </div>
@@ -127,7 +137,7 @@
                     <h2 class="email_h2">SUBSCRIBE</h2>
                     <h3 class="email_h3">FOR OUR NEWLETTER AND PROMOTION</h3>
                     <div class="email">
-                        <input class="input_email" type="text" placeholder="Enter Your Email">
+                        <input class="input_email" type="email" placeholder="Enter Your Email">
                         <button class="but_email">Subscribe</button>
                     </div>
                 </form>

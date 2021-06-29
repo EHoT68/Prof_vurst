@@ -89,6 +89,27 @@
     .prod_none
         display: none
 
+    /*страница с картами*/ 
+
+    .shop_cart_content
+        flex-direction: column
+
+        .shop_cart_list_item1_img
+            width: 40%
+
+        .shop_cart_addres
+            flex-direction: initial
+            justify-content: space-between
+
+            &_box1
+                margin-top: 64px
+
+            &_box2
+                margin-top: 100px
+
+        .svg_clos
+            margin-left: 137px
+
 @media(max-width: 667px)
     .conteiner
         width: 375px
@@ -189,3 +210,49 @@
 
     .but_add_prod
         margin-left: 40px
+
+    /*страница с картами*/ 
+    .shop_cart_list_item1_img
+        height: 188px
+        width: 40%
+
+    .shop_cart_content
+        flex-direction: column
+        margin-top: 39px
+        margin-bottom: 96px
+
+        .shop_cart_addres
+            flex-direction: column
+
+        .shop_cart_list_item1_txt
+            padding-left: 17px
+            padding-right: 31px
+
+            .shop_cart_item_p1
+                font-size: 16px
+                line-height: 19px
+                padding-bottom: 18px
+
+            .shop_cart_item_p2
+                font-size: 14px
+                line-height: 17px
+
+                .cart_p_span2
+                    font-size: 10px
+                    line-height: 12px
+                    padding: 1px 8px
+
+        .svg_clos
+            margin-left: 31px
+            width: 10px
+            height: 10px
+
+    .shop_cart_content .shop_cart_list .cart_battons .cart_battons_cler, .shop_cart_content .shop_cart_list .cart_battons .cart_battons_cont, .cart_battons_cont
+        padding: 8px 17px
+        margin-top: 32px
+        font-size: 12px
+        line-height: 14px
+        text-align: center
+
+    .shop_cart_content .shop_cart_addres_box2
+        margin-top: 48px
