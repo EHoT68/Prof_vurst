@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -56,74 +58,149 @@
                     </nav>
 
                 </div>
-                <div class="account"><a href="registration.html"><img src="img/account.svg" alt="acc"></a></div>
+                <div class="account"><img src="img/account.svg" alt=""></div>
                 <div class="basket"><img src="img/basket.svg" alt=""></div>
             </div>
         </div>
     </header>
-    <div class="head_content">
-
+    <div class="head_reg">
         <div class="conteiner">
-            <a class="head_box" href="#">
-
-                <div class="title_head_content">
-                    <h1 class="head-title1">THE BRAND</h1>
-                    <div class="title_head_mini">
-                        <h3 class="head-title2">OF LUXERIOUS&ensp;</h3>
-                        <h3 class="head-title2 red-color">FASHION</h3>
-                    </div>
+            <div class="head_prod">
+                <h3 class="head_reg_h3">NEW ARRIVALS </h3>
+                <nav class="crumb">
+                    <ol class="crumb_sub">
+                        <li><a class="crumb_sub_txt" href="#">HOME</a></li>
+                        <li><a class="crumb_sub_txt" href="#">MEN</a></li>
+                        <li class="current">NEW ARRIVALS</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="catalog_filter conteiner">
+        <div class="main_filter">
+            <input id="main_filt" type="checkbox">
+            <label class="main_filter_lab" for="main_filt">
+                <p class="main_filter_p1">FILTER</p>
+                <svg width="15" height="10" viewBox="0 0 15 10" fill="black" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z" />
+                </svg>
+            </label>
+            <section class="accord_filter">
+                <input id="main_filt_category" type="checkbox">
+                <label for="main_filt_category">CATEGORY
+                </label>
+                <div class="accord_filter_sub">
+                    <a href="#">Accessories</a>
+                    <a href="#">Bags</a>
+                    <a href="#">Denim</a>
+                    <a href="#">Hoodies & Sweatshirts</a>
+                    <a href="#">Jackets & Coats</a>
+                    <a href="#">Polos</a>
+                    <a href="#">Shirts</a>
+                    <a href="#">Shoes</a>
+                    <a href="#">Sweaters & Knits</a>
+                    <a href="#">T-Shirts</a>
+                    <a href="#">Tanks</a>
                 </div>
-            </a>
-
-
+                <input id="main_filt_brand" type="checkbox">
+                <label for="main_filt_brand">BRAND
+                </label>
+                <div class="accord_filter_sub">
+                    <a href="#">brand</a>
+                    <a href="#">brand</a>
+                    <a href="#">brand</a>
+                    <a href="#">brand</a>
+                    <a href="#">brand</a>
+                    <a href="#">brand</a>
+                    <a href="#">brand</a>
+                    <a href="#">brand</a>
+                    <a href="#">brand</a>
+                    <a href="#">brand</a>
+                    <a href="#">brand</a>
+                </div>
+                <input id="main_filt_designer" type="checkbox">
+                <label for="main_filt_designer">DESIGNER
+                </label>
+                <div class="accord_filter_sub">
+                    <a href="#">designer</a>
+                    <a href="#">designer</a>
+                    <a href="#">designer</a>
+                    <a href="#">designer</a>
+                    <a href="#">designer</a>
+                    <a href="#">designer</a>
+                    <a href="#">designer</a>
+                    <a href="#">designer</a>
+                    <a href="#">designer</a>
+                    <a href="#">designer</a>
+                    <a href="#">designer</a>
+                </div>
+            </section>
+        </div>
+        <div class="sub-filter">
+            <div class="sub-filter-block">
+                <input class="sub-filter-input" id="trend-lab" type="checkbox">
+                <label class="sub-filter-lab" for="trend-lab">
+                    <p class="sub-filter-lab_p1">TRENDING NOW</p>
+                </label>
+                <div class="sub-filter-item">
+                    <label for="trend-lab1">
+                        <input id="trend-lab1" type="checkbox">T-shirts
+                    </label>
+                    <label for="trend-lab2">
+                        <input id="trend-lab2" type="checkbox">Shorts
+                    </label>
+                    <label for="trend-lab3">
+                        <input id="trend-lab3" type="checkbox">Shoes
+                    </label>
+                    <label for="trend-lab4">
+                        <input id="trend-lab4" type="checkbox">Hoodies
+                    </label>
+                </div>
+            </div>
+            <div class="sub-filter-block">
+                <input class="sub-filter-input" id="size-lab" type="checkbox">
+                <label class="sub-filter-lab" for="size-lab">
+                    <p class="sub-filter-lab_p1">SIZE</p>
+                </label>
+                <div class="sub-filter-item">
+                    <label for="size-lab1">
+                        <input id="size-lab1" type="checkbox">XS
+                    </label>
+                    <label for="size-lab2">
+                        <input id="size-lab2" type="checkbox">S
+                    </label>
+                    <label for="size-lab3">
+                        <input id="size-lab3" type="checkbox">M
+                    </label>
+                    <label for="size-lab4">
+                        <input id="size-lab4" type="checkbox">L
+                    </label>
+                </div>
+            </div>
+            <div class="sub-filter-block">
+                <input class="sub-filter-input" id="price-lab" type="checkbox">
+                <label class="sub-filter-lab" for="price-lab">
+                    <p class="sub-filter-lab_p1">PRICE</p>
+                </label>
+                <div class="sub-filter-item sub-filter-item_width">
+                    <label for="price-lab1">
+                        <input id="price-lab1" type="checkbox"> &lt; 100$</label>
+                    <label for="price-lab2">
+                        <input id="price-lab2" type="checkbox">100$ - 500$
+                    </label>
+                    <label for="price-lab3">
+                        <input id="price-lab3" type="checkbox">500% - 1000$
+                    </label>
+                    <label for="price-lab4">
+                        <input id="price-lab4" type="checkbox">1000$ &gt;
+                    </label>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="conteiner">
-        <div class="offers">
-            <div class="offers1 wid_30">
-                <a class="offers1_sub" href="#">
-                    <img class="img_offer wid" src="img/offers1.png" alt="FOR WOMEN">
-                    <div class="offers2_title">
-                        <h2 class="offers1_title1">30% OFF</h2>
-                        <h3 class="offers1_title2 red-color">FOR WOMEN</h3>
-                    </div>
-                </a>
-            </div>
-            <div class="offers1 wid_30">
-                <a class="offers1_sub" href="#">
-                    <img class="img_offer wid" src="img/offers2.png" alt="FOR MEN">
-                    <div class="offers2_title">
-                        <h2 class="offers1_title1">HOT DEAL</h2>
-                        <h3 class="offers1_title2 red-color">FOR MEN</h3>
-                    </div>
-                </a>
-            </div>
-            <div class="offers1 wid_30">
-                <a class="offers1_sub" href="#">
-                    <img class="img_offer wid" src="img/offers3.png" alt="FOR KIDS">
-                    <div class="offers3_title">
-                        <h2 class="offers1_title1">NEW ARRIVALS</h2>
-                        <h3 class="offers1_title2 red-color">FOR KIDS</h3>
-                    </div>
-                </a>
-            </div>
-            <div class="offers2">
-                <a class="offers1_sub" href="#">
-                    <img class="wid" src="img/offers4.png" alt="ACCESORIES">
-                    <div class="offers4_title">
-                        <h2 class="offers1_title1">LUXIROUS & TRENDY</h2>
-                        <h3 class="offers1_title2 red-color">ACCESORIES</h3>
-                    </div>
-                </a>
-            </div>
-        </div>
-
-    </div>
-    <section class="conteiner_products conteiner">
-        <div class="products_title">
-            <h3 class="prod_title_h3">Fetured Items</h3>
-            <p class="prod_title_p">Shop for items based on what we featured in this week</p>
-        </div>
+    <section class="sect_catalog conteiner">
         <div class="products_item">
             <div class="prod_item1">
                 <a class="prod_item1_link" href="#">
@@ -145,7 +222,7 @@
             </div>
             <div class="prod_item1">
                 <a class="prod_item1_link" href="#">
-                    <img class="img_prod_item" src="img/prod_item2.png" alt="деловой костюм">
+                    <img class="img_prod_item" src="img/Catalog_item2.png" alt="коричневая куртка">
                     <div class="prod_item1_title">
                         <h3 class="prod_item_h3">ELLERY X M'O CAPSULE</h3>
                         <p class="prod_item_p">Known for her sculptural takes on traditional tailoring, Australian
@@ -199,7 +276,7 @@
             </div>
             <div class="prod_item1">
                 <a class="prod_item1_link" href="#">
-                    <img class="img_prod_item" src="img/prod_item5.png" alt="голубой костюм">
+                    <img class="img_prod_item" src="img/catalog_item5.png" alt="белая майка">
                     <div class="prod_item1_title">
                         <h3 class="prod_item_h3">ELLERY X M'O CAPSULE</h3>
                         <p class="prod_item_p">Known for her sculptural takes on traditional tailoring, Australian
@@ -217,7 +294,61 @@
             </div>
             <div class="prod_item1">
                 <a class="prod_item1_link" href="#">
-                    <img class="img_prod_item" src="img/prod_item6.png" alt="полосатая сорочка">
+                    <img class="img_prod_item" src="img/catalog_item6.png" alt="голубая бейсболка">
+                    <div class="prod_item1_title">
+                        <h3 class="prod_item_h3">ELLERY X M'O CAPSULE</h3>
+                        <p class="prod_item_p">Known for her sculptural takes on traditional tailoring, Australian
+                            arbiter of cool Kym
+                            Ellery teams up with Moda Operandi.</p>
+                        <h4 class="prod_item_h4">$52.00</h4>
+                    </div>
+                </a>
+                <div class="prod_add_cart">
+                    <a class="add_cart" href="#">
+                        <img src="img/add.svg" alt="корзина">
+                        <p class="add_cart_p">Add to Cart</p>
+                    </a>
+                </div>
+            </div>
+            <div class="prod_item1">
+                <a class="prod_item1_link" href="#">
+                    <img class="img_prod_item" src="img/Catalog_item7.png" alt="серые брюки">
+                    <div class="prod_item1_title">
+                        <h3 class="prod_item_h3">ELLERY X M'O CAPSULE</h3>
+                        <p class="prod_item_p">Known for her sculptural takes on traditional tailoring, Australian
+                            arbiter of cool Kym
+                            Ellery teams up with Moda Operandi.</p>
+                        <h4 class="prod_item_h4">$52.00</h4>
+                    </div>
+                </a>
+                <div class="prod_add_cart">
+                    <a class="add_cart" href="#">
+                        <img src="img/add.svg" alt="корзина">
+                        <p class="add_cart_p">Add to Cart</p>
+                    </a>
+                </div>
+            </div>
+            <div class="prod_item1">
+                <a class="prod_item1_link" href="#">
+                    <img class="img_prod_item" src="img/Catalog_item8.png" alt="кожанная куртка">
+                    <div class="prod_item1_title">
+                        <h3 class="prod_item_h3">ELLERY X M'O CAPSULE</h3>
+                        <p class="prod_item_p">Known for her sculptural takes on traditional tailoring, Australian
+                            arbiter of cool Kym
+                            Ellery teams up with Moda Operandi.</p>
+                        <h4 class="prod_item_h4">$52.00</h4>
+                    </div>
+                </a>
+                <div class="prod_add_cart">
+                    <a class="add_cart" href="#">
+                        <img src="img/add.svg" alt="корзина">
+                        <p class="add_cart_p">Add to Cart</p>
+                    </a>
+                </div>
+            </div>
+            <div class="prod_item1">
+                <a class="prod_item1_link" href="#">
+                    <img class="img_prod_item" src="img/Catalog_item9.png" alt="серые шорты">
                     <div class="prod_item1_title">
                         <h3 class="prod_item_h3">ELLERY X M'O CAPSULE</h3>
                         <p class="prod_item_p">Known for her sculptural takes on traditional tailoring, Australian
@@ -234,34 +365,31 @@
                 </div>
             </div>
         </div>
-        <button class="but_prod" type="submit">Browse All Product</button>
     </section>
+    <div class="page-site conteiner">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&lt;</span>
+                    </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item"><a class="page-link" href="#">7</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&gt;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
     <footer>
-        <div class="footer_try">
-            <div class="conteiner footer_top colom ">
-                <item class="footer_top_item">
-                    <img src="img/footer_top1.svg" alt="car">
-                    <h2 class="footer_top_h2">Free Delivery</h2>
-                    <p class="footer_top_p">Worldwide delivery on all. Authorit tively morph next-generation innov tion
-                        with extensive
-                        models.</p>
-                </item>
-                <item class="footer_top_item">
-                    <img src="img/footer_top2.svg" alt="%">
-                    <h2 class="footer_top_h2">Sales & discounts</h2>
-                    <p class="footer_top_p">Worldwide delivery on all. Authorit tively morph next-generation innov tion
-                        with extensive
-                        models.</p>
-                </item>
-                <item class="footer_top_item">
-                    <img src="img/footer_top3.svg" alt="crown">
-                    <h2 class="footer_top_h2">Quality assurance</h2>
-                    <p class="footer_top_p">Worldwide delivery on all. Authorit tively morph next-generation innov tion
-                        with extensive
-                        models.</p>
-                </item>
-            </div>
-        </div>
         <div class="footer_centr_try">
             <div class="footer_centr conteiner colom">
                 <figure class="footer_coment">
@@ -275,13 +403,13 @@
                     <h3 class="email_h3">FOR OUR NEWLETTER AND PROMOTION</h3>
                     <div class="email">
                         <input class="input_email" type="text" placeholder="Enter Your Email">
-                        <button class="but_email" type="submit">Subscribe</button>
+                        <button class="but_email">Subscribe</button>
                     </div>
                 </form>
             </div>
         </div>
-        <div class="footer_down_try">
-            <div class="footer_down conteiner">
+        <div class="footer_down_try wid">
+            <div class="footer_down conteiner wid">
                 <p class="text_footer_down">&copy;
                     <script>
                         document.write(new Date().getFullYear());
@@ -314,7 +442,6 @@
                 </div>
             </div>
         </div>
-
     </footer>
 
 </body>
