@@ -1181,13 +1181,10 @@ li {
   cursor: pointer;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .main_filter .main_filter_lab svg {
-  padding-left: 11px;
+  margin-left: 10px;
 }
 
 .main_filter label:hover {
