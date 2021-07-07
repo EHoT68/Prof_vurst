@@ -1401,6 +1401,8 @@ label input {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 72px;
+  margin-top: 5px;
 }
 
 .page-item {
