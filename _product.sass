@@ -4,32 +4,35 @@
    justify-content: space-between
    width: 100%
 
-   .crumb
-      margin-top: 54px
-      &_sub
+.crumb
+   margin-top: 54px
+   &_sub
+      display: flex
+
+      li
+         margin-left: 5px
          display: flex
+         align-items: center
 
-         li
-            margin-left: 5px
-
-            &_txt
-               font-weight: bold
-               font-size: 14px
-               line-height: 17px
-               color: #636363
-               display: flex
-
-            &_txt::after
-               content: " / "
-               display: block
-               padding-left: 5px
-
-            .current
-               font-weight: bold
-               font-size: 14px
-               line-height: 17px
+         .crumb_sub_txt
+            font-weight: bold
+            font-size: 14px
+            line-height: 17px
+            color: #636363
+            display: flex
+            &:hover
                color: $color_span
-               margin-left: 5px
+
+         &::after
+            content: " / "
+            display: block
+            padding-left: 5px
+
+      .current
+         font-weight: bold
+         font-size: 14px
+         line-height: 17px
+         color: $color_span
 
 .carousel_prod
    background: #F7F7F7
@@ -78,6 +81,9 @@
    font-size: 14px
    line-height: 17px
    padding: 5px
+
+   &:hover
+      box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
 
 .item-1_cart_info
    border-bottom: 1px solid #EAEAEA
