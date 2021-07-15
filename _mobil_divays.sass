@@ -1,6 +1,6 @@
 @media(max-width: 1024px)
    .conteiner
-      width: 100%
+      max-width: 768px
 
    .img_head_content
       width: 386px
@@ -46,14 +46,12 @@
       &1_title, .offers2_title, .offers3_title
          top: 59px
 
-         &4_title
-            top: 33px
+      &4_title
+         top: 33px
 
    .colom
       flex-direction: column
 
-   .conteiner_products
-      margin-top: 124px
    .footer_top
       padding-bottom: 48px
 
@@ -114,9 +112,14 @@
          .svg_clos
             margin-left: 137px
 
+   /*страница регистрации*/     
+   .reg_form
+      margin-left: 4px
+      padding-right: 22px
+
 @media(max-width: 667px)
    .conteiner
-      width: 375px
+      width: 96%
 
    .account, .basket
       display: none
@@ -138,13 +141,34 @@
       top: 105px
 
    .offers4_title
-      top: 5px
+      top: 30px
+
+   .offers2
+      height: 111px
+
+   .img_offer2
+      height: 100%
 
    .conteiner_products
       margin-top: 66px
 
+   .prod_item1
+      width: 96%
+
+   .prod_item1_link
+      width: 100%
+
+   .img_prod_item
+      width: 100%
+
+   .prod_item1_title
+      width: 100%
+
    .footer_p
       width: auto
+
+   .input_email
+      width: 100%
 
    .footer_down
       flex-direction: column-reverse
@@ -157,8 +181,6 @@
    /*страница с регистрацией*/
    .reg_cont
       flex-direction: column
-      padding-left: 8px
-      padding-right: 8px
 
       .reg_form
          padding-right: 0
@@ -170,6 +192,9 @@
       text-align: center
       width: 100%
 
+   .in_fi_name, .in_la_name, .in_email_name, .in_pass_name
+      width: 96%
+
    /*страница продукта*/    
 
    .head_prod
@@ -180,17 +205,17 @@
          margin-bottom: 0
          padding-left: 0
 
-         .crumb
-            margin-top: 0
-            padding: 0
+   .crumb
+      margin-top: 0
+      padding: 0
 
-            &_sub
-               margin-top: 32px
-               margin-bottom: 46px
-               justify-content: center
+      &_sub
+         margin-top: 32px
+         margin-bottom: 46px
+         justify-content: center
 
-            li
-               margin: 0
+         li
+            margin: 0 3px
 
    .carousel-item_img
       width: 375px
@@ -227,6 +252,7 @@
 
          .shop_cart_list_item1_img
             height: 188px
+            min-width: 96%
 
       .shop_cart_addres
          flex-direction: column
@@ -236,18 +262,18 @@
          padding-right: 5px
 
          .shop_cart_item_p1
-            font-size: 16px
-            line-height: 19px
+            font-size: 14px
+            line-height: 17px
             padding-bottom: 18px
 
-            .shop_cart_item_p2
-               font-size: 14px
-               line-height: 17px
+         .shop_cart_item_p2
+            font-size: 14px
+            line-height: 17px
 
-               .cart_p_span2
-                  font-size: 10px
-                  line-height: 12px
-                  padding: 1px 8px
+            .cart_p_span2
+               font-size: 10px
+               line-height: 12px
+               padding: 1px 8px
 
    .svg_clos
       width: 10px
@@ -289,3 +315,11 @@
       line-height: 14px
       padding-left: 0
       padding-right: 0
+
+@media(max-width: 320px)
+
+   .input_email
+      width: 90%
+
+   .but_email
+      width: 30%
