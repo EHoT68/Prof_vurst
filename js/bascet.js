@@ -1,5 +1,5 @@
 'use strict';
-let addCart = document.querySelectorAll(".prod_add_cart");
+let addCart = document.querySelectorAll(".add_cart");
 let bascetSpan = document.querySelector(".basket span");
 let basketItemsHead = document.querySelector(".basket-item_head");
 let basketItemTotal = document.querySelector(".basket-item_total");
@@ -38,19 +38,20 @@ function insertsDiv() {
 };
 addCart.forEach(element => {
    element.addEventListener('click', (e) => {
-      let parent = e.path[2].children[0];
-      if (parent) {
-         imgProd = parent.children[0].attributes[1].textContent;
-         nameProd = parent.children[1].children[0].textContent;
-         PriceProd = parent.children[1].children[2].textContent;
-         idProd = imgProd[imgProd.length - 5];
-         newPriceProd = Number(PriceProd.replace(/\$/g, ''));
-         bascetSpan.textContent++;
-         sumPrice = newPriceProd;
-         insertsDiv();
-         total += newPriceProd;
-         basketItemTotal.innerHTML = `ИТОГО :  $${total}`;
-      };
+      let parent = e.path[3].children[0];
+      if (parent.tagName == "DIV") {
+         parent = parent.children[0];
+      }
+      imgProd = parent.children[0].attributes[1].textContent;
+      nameProd = parent.children[1].children[0].textContent;
+      PriceProd = parent.children[1].children[2].textContent;
+      idProd = imgProd[imgProd.length - 5];
+      newPriceProd = Number(PriceProd.replace(/\$/g, ''));
+      bascetSpan.textContent++;
+      sumPrice = newPriceProd;
+      insertsDiv();
+      total += newPriceProd;
+      basketItemTotal.innerHTML = `ИТОГО :  $${total}`;
    });
 });
 
